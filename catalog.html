@@ -10,19 +10,21 @@
         <a>
             <img src="https://via.placeholder.com/150x100" alt="">
         </a>
-        <ul>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="catalog.html">Доставка и оплата</a></li>
-            <li><a href="catalog.html">О компании</a></li>
-        </ul>
-        <p>Поиск</p>
-        <a href="">Вход</a>
-        <a href="">Корзина</a>
+      <ul>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="catalog.html">Доставка и оплата</a></li>
+        <li><a href="catalog.html">О компании</a></li>
+      </ul>
+      <ul>
+        <li><a href="img/loupe.svg"></a></li>
+        <li><a href="img/entrance.svg">Вход</a></li>
+        <li><a href="img/basket.svg">Корзина</a></li>
+      </ul>
     </nav>
 </header>
 <main>
     <section>
-        <h4>Каталог</h4>
+        <h4>Хлебные крошки</h4>
         <ul>
             <li><a href="index.html">Главная</a></li>
             <li><a href="catalog.html">Каталог</a></li>
@@ -30,101 +32,167 @@
         </ul>
     </section>
     <section>
-        <p>
-            С 10 до 20, ежедневно <br>
-            <span>8 812 450-25-25</span>
-        </p>
+      <div>
+        <p>С 10 до 20 ежедневно<br><a href="88124502525"><strong>8 812 450-25-25</strong></a></p>
+      </div>
     </section>
+  <section>
+    <h2>Фильтр</h2>
+    <div class="sorting">
+      <input type="hidden" id="sorting">
+      <label for="sorting">Сортировка:</label>
+      <Select id="sorting" name="sorting">
+        <option selected value="popular">По популярности</option>
+        <option value="price">По цене</option>
+      </Select>
+    </div>
+    <div class="price">
+      <input type="hidden" id="price">
+      <label for="price">Цена:</label>
+      <input type="range" min="10" step="any">
+      <input type="range" max="1500" step="any">
+    </div>
+    <div class="fat">
+      <input type="radio" name="0" id="0">
+      <label for="0">0%</label>
+      <input type="radio" name="10" id="10" checked>
+      <label for="10">До 10%</label>
+      <input type="radio" name="30" id="30">
+      <label for="30">До 30%</label>
+      <input type="radio" id="31">
+      <label for="31">Выше 30%</label>
+    </div>
+    <div class="fill">
+      <input type="checkbox" name="fill" id="fill1" checked>
+      <label for="fill1">шоколадные</label>
+      <input type="checkbox" name="fill" id="fill2" checked>
+      <label for="fill2">сахарные присыпки</label>
+      <input type="checkbox" name="fill" id="fill3">
+      <label for="fill3">фрукты</label>
+      <input type="checkbox" name="fill" id="fill4">
+      <label for="fill4">сиропы</label>
+      <input type="checkbox" name="fill" id="fill5">
+      <label for="fill5">джемы</label>
+    </div>
+    <input type="button" value="Применить">
+  </section>
     <section>
         <h2>Сливочное мороженое</h2>
         <ul>
             <li>
+              <article>
                 <img src="https://via.placeholder.com/150x100" alt="">
                 <a href="">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                 <p>310ք<span>/кг</span></p>
+              </article>
             </li>
             <li>
+              <article>
                 <img src="https://via.placeholder.com/150x100" alt="">
                 <a href="">Сливочно-кофейное с кусочками шоколада</a>
                 <p>380ք<span>/кг</span></p>
+              </article>
             </li>
             <li>
+              <article>
                 <img src="https://via.placeholder.com/150x100" alt="">
                 <a href="">Сливочно-клубничное с присыпкой из белого шоколада</a>
                 <p>355ք<span>/кг</span></p>
+              </article>
             </li>
             <li>
+              <article>
                 <img src="https://via.placeholder.com/150x100" alt="">
                 <a href="">Сливочное крем-брюле с карамельной подливкой</a>
                 <p>415ք<span>/кг</span></p>
+              </article>
             </li>
             <li>
+              <article>
                 <img src="https://via.placeholder.com/150x100" alt="">
                 <a href="">Сливочное с брусничным джемом</a>
                 <p>325ք<span>/кг</span></p>
+              </article>
             </li>
             <li>
+              <article>
                 <img src="https://via.placeholder.com/150x100" alt="">
                 <a href="">Сливочно-черничное с цельными ягодами черники</a>
                 <p>410ք<span>/кг</span></p>
+              </article>
             </li>
             <li>
+              <article>
                 <img src="https://via.placeholder.com/150x100" alt="">
                 <a href="">Сливочно-лимонное с карамельной присыпкой</a>
                 <p>315ք<span>/кг</span></p>
+              </article>
             </li>
             <li>
+              <article>
                 <img src="https://via.placeholder.com/150x100" alt="">
                 <a href="">Сливочное с шоколадной стружкой</a>
                 <p>320ք<span>/кг</span></p>
+              </article>
             </li>
             <li>
+              <article>
                 <img src="https://via.placeholder.com/150x100" alt="">
                 <a href="">Сливочно-ванильное с кусочками шоколада</a>
                 <p>440ք<span>/кг</span></p>
+              </article>
             </li>
             <li>
+              <article>
                 <img src="https://via.placeholder.com/150x100" alt="">
                 <a href="">Сливочное с ментоловым сиропом</a>
                 <p>435ք<span>/кг</span></p>
+              </article>
             </li>
             <li>
+              <article>
                 <img src="https://via.placeholder.com/150x100" alt="">
                 <a href="">Сливочное с кусочками черного шоколада</a>
                 <p>355ք<span>/кг</span></p>
+              </article>
             </li>
             <li>
+              <article>
                 <img src="https://via.placeholder.com/150x100" alt="">
                 <a href="">Сливочное с мятным сиропом</a>
                 <p>420ք<span>/кг</span></p>
+              </article>
             </li>
         </ul>
     </section>
 </main>
 <footer>
-    <section>
-        <h3>Социальные сети</h3>
-        <ul>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Vkontakte</a></li>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Twitter</a></li>
-        </ul>
-    </section>
-    <section>
-        <h3>Дополнительная информация</h3>
-        <p><a href="">Для поставщиков</a></p>
-        <p><a href="">О производстве</a></p>
-        <p><a href="">Наши документы</a></p>
-        <p><a href="">Экологические стандарты</a></p>
-    </section>
-    <section>
-        <h4>Разработка</h4>
-        <img src="https://via.placeholder.com/150x100" alt="">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-            Сделано в HTML Academy ©2019
-        </a>
-    </section>
+  <section>
+    <h3>Социальные сети</h3>
+    <ul>
+      <li><a href="img/fb.svg" aria-label="Facebook">Facebook</a></li>
+      <li><a href="img/vk.svg" aria-label="Vkontakte">Vkontakte</a></li>
+      <li><a href="img/instagram.svg" aria-label="Instagram">Instagram</a></li>
+      <li><a href="img/twitter.svg" aria-label="Twitter">Twitter</a></li>
+    </ul>
+  </section>
+  <section>
+    <h3>Дополнительная информация</h3>
+    <p>
+      <a href=""><strong>Для поставщиков</strong></a>
+      <img src="img/heart.svg" alt="">
+    </p>
+    <p><a href="">О производстве</a></p>
+    <p><a href="">Наши документы</a></p>
+    <p><a href="">Экологические стандарты</a></p>
+  </section>
+  <section>
+    <h4>Разработка</h4>
+    <img src="img/logo-htmlacademy.svg" alt="">
+    <a href="https://htmlacademy.ru/intensive/htmlcss">
+      Сделано в HTML Academy ©2019
+    </a>
+  </section>
 </footer>
 </body>
 </html>
