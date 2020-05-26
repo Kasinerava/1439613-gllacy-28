@@ -11,23 +11,47 @@
         <img src="img/logo.svg" alt="">
       </a>
       <ul>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="catalog.html">Доставка и оплата</a></li>
-        <li><a href="catalog.html">О компании</a></li>
+        <li>
+          <a href="catalog.html" aria-label="Каталог">Каталог</a>
+          <button type="button">
+            <li>
+              <a href="catalog.html" aria-label="Новинки">Новинки</a>
+              <a href="catalog.html" aria-label="Сливочное"> Сливочное</a>
+              <a href="catalog.html" aria-label="Щербеты"> Щербеты</a>
+              <a href="catalog.html" aria-label="Фруктовый лед"> Фруктовый лед</a>
+              <a href="catalog.html" aria-label="Мелорин"> Мелорин</a>
+            </li>
+          </button>
+        </li>
+        <li><a href="catalog.html" aria-label="Доставка и оплата">Доставка и оплата</a></li>
+        <li><a href="catalog.html" aria-label="О компании">О компании</a></li>
       </ul>
       <ul>
       <li><a href="">
-        <input type="text">
+        <input type="text" placeholder="Что ищем?">
         <img src="img/loupe.svg">
       </a></li>
-      <li><a href="">
-        Вход
-        <img src="img/entrance.svg" alt="">
-      </a></li>
-      <li><a href="">
-        Корзина
-        <img src="img/basket.svg" alt="">
-      </a></li>
+        <li><a href="">
+          Вход
+          <img src="img/entrance.svg" alt="">
+        </a>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label class="visually-hidden" for="e-mail">Электронная почта</label>
+              <input type="text" id="e-mail" name="e-mail" placeholder="Электронная почта">
+            </p>
+            <p>
+              <label for="userpassword">Пароль</label>
+              <input type="password" id="userpassword" name="password" placeholder="Пароль">
+            </p>
+            <button type="submit">Войти</button>
+            <a href="" aria-label="Забыли пароль">Забыли пароль</a>
+            <a href="" aria-label="Регистрация">Новая регистрация</a>
+          </form>
+          <a href="">
+            Корзина
+            <img src="img/basket.svg" alt="">
+          </a></li>
       </ul>
     </nav>
   </header>
@@ -128,6 +152,16 @@
           Для заказов по телефону: <a href="+78124502525">8 812 450-25-25</a>(с 10 до 20 ежедневно)
         </p>
         <input type="button" value="Форма обратной связи">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <fieldset>
+          <h2>Мы обязательно вам ответим!</h2>
+          <label for="name"><input type="text" name="name" id="name" placeholder="Как вас зовут?"></label>
+          <label for="email"><input type="email" name="e-mail" id="email" placeholder="Ваша почта для ответа?" required></label>
+          <label for="comment"></label><textarea name="comment" id="comment" rows="10">Напишите что-нибудь...</textarea>
+          <input type="submit" name="submit" value="Отправить">
+          <button type="button"></button>
+            </fieldset>
+        </form>
       </div>
     </section>
   </main>
