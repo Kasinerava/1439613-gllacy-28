@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link href="style.css" rel="stylesheet" >
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header>
@@ -16,13 +16,11 @@
         <li>
           <a href="catalog.html" aria-label="Каталог">Каталог</a>
           <ul>
-            <li>
-              <a href="catalog.html" aria-label="Новинки">Новинки</a>
-              <a href="catalog.html" aria-label="Сливочное"> Сливочное</a>
-              <a href="catalog.html" aria-label="Щербеты"> Щербеты</a>
-              <a href="catalog.html" aria-label="Фруктовый лед"> Фруктовый лед</a>
-              <a href="catalog.html" aria-label="Мелорин"> Мелорин</a>
-            </li>
+            <li><a href="catalog.html" aria-label="Новинки">Новинки</a></li>
+            <li><a href="catalog.html" aria-label="Сливочное"> Сливочное</a></li>
+            <li><a href="catalog.html" aria-label="Щербеты"> Щербеты</a></li>
+            <li><a href="catalog.html" aria-label="Фруктовый лед"> Фруктовый лед</a></li>
+            <li><a href="catalog.html" aria-label="Мелорин"> Мелорин</a></li>
           </ul>
         </li>
         <li><a href="catalog.html" aria-label="Доставка и оплата">Доставка и оплата</a></li>
@@ -31,8 +29,9 @@
       <ul>
       <li>
         <a href="" aria-label="Поиск">
-        <input type="text" placeholder="Что ищем?">
-      </a></li>
+        </a>
+        <input type="search" placeholder="Что ищем?">
+      </li>
         <li>
           <a href="" aria-label="Вход">
           Вход
@@ -47,8 +46,8 @@
               <input type="password" id="userpassword" name="password" placeholder="Пароль">
             </p>
             <button type="submit">Войти</button>
-            <a href="" aria-label="Забыли пароль">Забыли пароль</a>
-            <a href="" aria-label="Регистрация">Новая регистрация</a>
+            <a href="">Забыли пароль</a>
+            <a href="">Новая регистрация</a>
           </form>
           <a href="" aria-label="Корзина">
             Корзина
@@ -61,21 +60,26 @@
       <h1>Крем-брюле и пломбир с малиновым джемом</h1>
       <input type="button" value="Давайте оба!">
       <div>
-        <p>С 10 до 20 ежедневно<br><a href="+78124502525">8 812 450-25-25</a></p>
+        <p>С 10 до 20 ежедневно<br><a href="tel:+78124502525">8 812 450-25-25</a></p>
       </div>
     </section>
-    <article>
+    <ul>
+    <li><article>
       <p>
         <span>Малинка даром!</span> При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
       </p>
       <input type="button" value="Хочу варенье!">
     </article>
+    </li>
+    <li>
     <article>
       <p>
         <span>Шоколадки даром!</span> При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
       </p>
       <input type="button" value="Хочу шоколадки!">
     </article>
+    </li>
+    </ul>
     <section>
       <h2>Хиты</h2>
       <ul>
@@ -103,31 +107,24 @@
           <a href="img/hit.svg"></a>
           <p>415&#8381;<span>/кг</span></p>
         </li>
+      </ul>
     </section>
     <section>
       <h2>О магазине</h2>
       <p>Магазин Глэйси - это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
-      <div class="time">
-        <p>Всё наше мороженое изготавливается на собственном производстве,
+        <p class="time">Всё наше мороженое изготавливается на собственном производстве,
           с ипользованием современного оборудования и проверенных временем технологий
         </p>
-      </div>
-      <div class="eco">
-        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
+        <p class="eco">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества.
           Все дополнительные ингредиенты и добавки произведены из натуарильного, экологически
           чистого сырья.
         </p>
-      </div>
-      <div class="longterm">
-        <p>Закупка ингредиентов производится только у проверенных фермерских хозяйтсв и компаний, с которыми
+        <p class="longterm">Закупка ингредиентов производится только у проверенных фермерских хозяйтсв и компаний, с которыми
           нас связывает долговременное сотрудничество.
         </p>
-      </div>
-      <div class="delivery">
-        <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
+        <p class="delivery">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
           мороженому растаять в пути и позволяет сохранить превосходный вкус.
         </p>
-      </div>
     </section>
     <section>
       <h3>Новости</h3>
@@ -150,7 +147,7 @@
       <div>
         <p>
           Адрес главного офиса и офлайн-магазина: <address>ул. Большая Конюшенная, 19/8, Санкт-Петербург</address>
-          Для заказов по телефону: <a href="+78124502525">8 812 450-25-25</a>(с 10 до 20 ежедневно)
+          Для заказов по телефону: <a href="tel:+78124502525">8 812 450-25-25</a>(с 10 до 20 ежедневно)
         </p>
         <input type="button" value="Форма обратной связи">
           <form action="https://echo.htmlacademy.ru" method="post">

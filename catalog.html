@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Каталог Глэйси</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link href="css/style.css" rel="stylesheet" >
 </head>
 <body>
 <header>
@@ -18,8 +20,9 @@
       <ul>
         <li>
           <a href="" aria-label="Поиск">
-          <input type="text">
-        </a></li>
+          </a>
+          <input type="search" placeholder="Что ищем?">
+        </li>
         <li><a href="" aria-label="Вход">
           Вход
         </a></li>
@@ -45,7 +48,7 @@
     </section>
     <section>
       <div>
-        <p>С 10 до 20 ежедневно<br><a href="+78124502525">8 812 450-25-25</a></p>
+        <p>С 10 до 20 ежедневно<br><a href="tel:+78124502525">8 812 450-25-25</a></p>
       </div>
     </section>
   <section>
@@ -53,7 +56,7 @@
     <div class="sorting">
       <input type="hidden" id="sorting">
       <label for="sorting">Сортировка:</label>
-      <Select id="sorting" name="sorting">
+      <Select id="sort" name="sort">
         <option selected value="popular">По популярности</option>
         <option value="price-low">Сначала недорогие</option>
         <option value="price-high">Сначала дорогие</option>
@@ -61,20 +64,19 @@
       </Select>
     </div>
     <div class="price">
-      <input type="hidden" id="price">
-      <label for="price">Цена:</label>
-      <input type="range" min="10" step="any">
-      <input type="range" max="1500" step="any">
+      <span></span>
+      <span>10</span>
+      <span>1500</span>
     </div>
     <div class="fat">
-      <input type="radio" name="0" id="0">
-      <label for="0">0%</label>
-      <input type="radio" name="10" id="10" checked>
-      <label for="10">До 10%</label>
-      <input type="radio" name="30" id="30">
-      <label for="30">До 30%</label>
-      <input type="radio" id="31">
-      <label for="31">Выше 30%</label>
+      <input type="radio" name="radio" id="radio1">
+      <label for="radio1">0%</label>
+      <input type="radio" name="radio" id="radio2" checked>
+      <label for="radio2">До 10%</label>
+      <input type="radio" name="radio" id="radio3">
+      <label for="radio3">До 30%</label>
+      <input type="radio" id="radio4">
+      <label for="radio4">Выше 30%</label>
     </div>
     <div class="fill">
       <input type="checkbox" name="fill" id="fill1" checked>
@@ -123,56 +125,56 @@
             </li>
             <li>
               <article>
-                <img src="img/h-five" alt="">
+                <img src="img/h-five.png" alt="">
                 <a href="">Сливочное с брусничным джемом</a>
                 <p>325&#8381;<span>/кг</span></p>
               </article>
             </li>
             <li>
               <article>
-                <img src="img/h-six" alt="">
+                <img src="img/h-six.png" alt="">
                 <a href="">Сливочно-черничное с цельными ягодами черники</a>
                 <p>410&#8381;<span>/кг</span></p>
               </article>
             </li>
             <li>
               <article>
-                <img src="img/h-seven" alt="">
+                <img src="img/h-seven.png" alt="">
                 <a href="">Сливочно-лимонное с карамельной присыпкой</a>
                 <p>315&#8381;<span>/кг</span></p>
               </article>
             </li>
             <li>
               <article>
-                <img src="img/h-eight" alt="">
+                <img src="img/h-eight.png" alt="">
                 <a href="">Сливочное с шоколадной стружкой</a>
                 <p>320&#8381;<span>/кг</span></p>
               </article>
             </li>
             <li>
               <article>
-                <img src="img/h-nine" alt="">
+                <img src="img/h-nine.png" alt="">
                 <a href="">Сливочно-ванильное с кусочками шоколада</a>
                 <p>440&#8381;<span>/кг</span></p>
               </article>
             </li>
             <li>
               <article>
-                <img src="img/h-ten" alt="">
+                <img src="img/h-ten.png" alt="">
                 <a href="">Сливочное с ментоловым сиропом</a>
                 <p>435&#8381;<span>/кг</span></p>
               </article>
             </li>
             <li>
               <article>
-                <img src="img/h-elvn" alt="">
+                <img src="img/h-elvn.png" alt="">
                 <a href="">Сливочное с кусочками черного шоколада</a>
                 <p>355&#8381;<span>/кг</span></p>
               </article>
             </li>
             <li>
               <article>
-                <img src="img/h-twl" alt="">
+                <img src="img/h-twl.png" alt="">
                 <a href="">Сливочное с мятным сиропом</a>
                 <p>420&#8381;<span>/кг</span></p>
               </article>
@@ -181,11 +183,11 @@
     </section>
   <div>
     <ul>
-      <li><a href="" aria-label="1 страница">1</a></li>
-      <li><a href="" aria-label="2 страница">2</a></li>
-      <li><a href="" aria-label="3 страница">3</a></li>
-      <li><a href="" aria-label="4 страница">4</a></li>
-      <li><a href="" aria-label="5 страница">5</a></li>
+      <li><a href="" >1</a></li>
+      <li><a href="" >2</a></li>
+      <li><a href="" >3</a></li>
+      <li><a href="" >4</a></li>
+      <li><a href="" >5</a></li>
     </ul>
   </div>
 </main>
