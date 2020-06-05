@@ -8,14 +8,14 @@
   </head>
   <body>
   <header>
-    <nav>
+    <nav class="main-nav">
       <a>
-        <img src="img/logo.svg" alt="">
+        <img src="img/logo.svg" alt="" class="logo">
       </a>
-      <ul>
+      <ul class="menu">
         <li>
           <a href="catalog.html" aria-label="Каталог">Каталог</a>
-          <ul>
+          <ul class="list">
             <li><a href="catalog.html" aria-label="Новинки">Новинки</a></li>
             <li><a href="catalog.html" aria-label="Сливочное"> Сливочное</a></li>
             <li><a href="catalog.html" aria-label="Щербеты"> Щербеты</a></li>
@@ -26,17 +26,17 @@
         <li><a href="catalog.html" aria-label="Доставка и оплата">Доставка и оплата</a></li>
         <li><a href="catalog.html" aria-label="О компании">О компании</a></li>
       </ul>
-      <ul>
-      <li>
-        <a href="" aria-label="Поиск">
+      <ul class="user-action">
+      <li class="loupe">
+        <a href="" aria-label="Поиск" >
         </a>
-        <input type="search" placeholder="Что ищем?">
+        <input type="search" placeholder="Что ищем?" class="search">
       </li>
-        <li>
+        <li class="enter">
           <a href="" aria-label="Вход">
           Вход
         </a>
-          <form action="https://echo.htmlacademy.ru" method="post">
+          <form action="https://echo.htmlacademy.ru" method="post" class="user">
             <p>
               <label class="visually-hidden" for="e-mail">Электронная почта</label>
               <input type="text" id="e-mail" name="e-mail" placeholder="Электронная почта">
@@ -49,9 +49,12 @@
             <a href="">Забыли пароль</a>
             <a href="">Новая регистрация</a>
           </form>
-          <a href="" aria-label="Корзина">
-            Корзина
-          </a></li>
+          </li>
+          <li>
+          <a href="" aria-label="Корзина" class="basket">
+            Пусто
+          </a>
+          </li>
       </ul>
     </nav>
   </header>

@@ -7,14 +7,87 @@
 }
 
 body {
-    min-width: 1300px;
+    min-width: 1200px;
     padding: 0;
     margin: 0;
     font-family:'Roboto', sans-serif;
     font-size: 16px;
+    color: var(--basic-white) ;
+    background-color: var(--basic-green);
 }
-header {
-  background-color: var(--basic-green);
-  color: var(--basic-white);
-  font-weight: 500;
+
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 27px;
+  padding-top: 11px;
+  display: flex;
+  flex-basis: 13%;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  flex-basis: 30%;
+  padding-left: 25px;
+  flex-grow: 1;
+  padding-right: 32px;
+
+}
+
+.menu a {
+  padding-right: 32px;
+  text-decoration-line: none;
+  color: white;
+}
+
+.user-action{
+  list-style-type: none;
+  display: flex;
+  flex-basis: 20%;
+  padding-right:27px;
+  justify-content: space-between;
+}
+
+.user-action a{
+  color: white;
+  text-decoration: none;
+  padding-right: 20px;
+}
+
+.user-action .basket {
+  display: inline-block;
+  background-image: url("../img/basket.svg");
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.user-action .enter {
+  display: inline-block;
+  background-image: url("../img/entrance.svg");
+  background-repeat: no-repeat;
+  padding-left: 30px;
+}
+
+.user-action .loupe {
+  display: inline-block;
+  background-image: url("../img/loupe.svg");
+  background-repeat: no-repeat;
+}
+
+.list {
+  display: none;
+}
+
+.user {
+  display: none;
+}
+
+.user-action .search {
+  display: none;
 }
