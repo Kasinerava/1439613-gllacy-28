@@ -8,14 +8,14 @@
   </head>
   <body>
   <header>
-    <nav class="main-nav">
+    <nav class="nav">
       <a>
-        <img src="img/logo.svg" alt="" class="logo">
+        <img src="img/logo.svg" alt="" class="nav-logo">
       </a>
-      <ul class="menu">
+      <ul class="nav-menu">
         <li>
           <a href="catalog.html" aria-label="Каталог">Каталог</a>
-          <ul class="list">
+          <ul class="nav-list">
             <li><a href="catalog.html" aria-label="Новинки">Новинки</a></li>
             <li><a href="catalog.html" aria-label="Сливочное"> Сливочное</a></li>
             <li><a href="catalog.html" aria-label="Щербеты"> Щербеты</a></li>
@@ -26,17 +26,17 @@
         <li><a href="catalog.html" aria-label="Доставка и оплата">Доставка и оплата</a></li>
         <li><a href="catalog.html" aria-label="О компании" >О компании</a></li>
       </ul>
-      <ul class="user-action">
-      <li class="loupe">
-        <a href="" aria-label="Поиск" class="loupe-border">
+      <ul class="nav-user">
+      <li class="nav-loupe">
+        <a href="" aria-label="Поиск">
         </a>
-        <input type="search" placeholder="Что ищем?" class="search">
+        <input type="search" placeholder="Что ищем?" class="nav-search">
       </li>
-        <li class="enter">
+        <li class="nav-enter">
           <a href="" aria-label="Вход">
           Вход
         </a>
-          <form action="https://echo.htmlacademy.ru" method="post" class="user">
+          <form action="https://echo.htmlacademy.ru" method="post" class="main-form">
             <p>
               <label class="visually-hidden" for="e-mail">Электронная почта</label>
               <input type="text" id="e-mail" name="e-mail" placeholder="Электронная почта">
@@ -50,41 +50,51 @@
             <a href="">Новая регистрация</a>
           </form>
           </li>
-          <li class="basket">
+          <li class="nav-basket">
           <a href="" aria-label="Корзина">
             Пусто
           </a>
           </li>
       </ul>
     </nav>
+    <div class="header-contacts">
+      <p>c 10 до 20, ежедневно<br><a href="tel:+78124502525">8 812 450-25-25</a></p>
+    </div>
   </header>
   <main>
-    <section class="proposal-1">
-      <h1>Крем-брюле и пломбир <br> с малиновым джемом</h1>
-      <input type="button" value="Давайте оба!" class="button-1">
-      <div>
-        <p>С 10 до 20 ежедневно<br><a href="tel:+78124502525">8 812 450-25-25</a></p>
-      </div>
+    <section class="section-proposal">
+      <ul class="section-proposal-1">
+      <li><h2>Крем-брюле и пломбир <br> с малиновым джемом</h2></li>
+      <li><input type="button" value="Давайте оба!" class="section-button-1"></li>
+      </ul>
+      <ul class="section-proposal-2">
+        <li><h2>Шоколадный пломбир <br> и лимонный сорбет</h2></li>
+        <li><input type="button" value="Давайте оба!" class="section-button-2"></li>
+      </ul>
+      <ul class="section-proposal-3">
+        <li><h2>Пломбир с помадкой <br> и клубничный щербет</h2></li>
+        <li><input type="button" value="Давайте оба!" class="section-button-3"></li>
+      </ul>
     </section>
-    <ul>
-    <li><article>
-      <p>
-        <span>Малинка даром!</span> При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+    <ul class="main-news">
+    <li class="main-news-1"><article>
+      <p class="main-news-text">
+        <span class="main-news-title">Малинка даром!</span><br> При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
       </p>
-      <input type="button" value="Хочу варенье!">
+      <input type="button" value="Хочу варенье!" class="news-button-1">
     </article>
     </li>
-    <li>
+    <li class="main-news-2">
     <article>
-      <p>
-        <span>Шоколадки даром!</span> При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+      <p class="main-news-text">
+        <span class="main-news-title">Шоколадки даром!</span> <br>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
       </p>
-      <input type="button" value="Хочу шоколадки!">
+      <input type="button" value="Хочу шоколадки!" class="news-button-2">
     </article>
     </li>
     </ul>
     <section>
-      <h2>Хиты</h2>
+      <h3>Хиты</h3>
       <ul>
         <li>
           <img src="img/hit-one.png" alt="">
@@ -113,7 +123,7 @@
       </ul>
     </section>
     <section>
-      <h2>О магазине</h2>
+      <h3>О магазине</h3>
       <p>Магазин Глэйси - это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
         <p class="time">Всё наше мороженое изготавливается на собственном производстве,
           с ипользованием современного оборудования и проверенных временем технологий
@@ -130,7 +140,7 @@
         </p>
     </section>
     <section>
-      <h3>Новости</h3>
+      <h4>Новости</h4>
       <ul>
         <li>
           <p>10 способов сервировки фруктовых щербетов к столу</p>
@@ -168,7 +178,7 @@
   </main>
   <footer>
     <section>
-      <h3>Социальные сети</h3>
+      <h4>Социальные сети</h4>
       <ul>
         <li><a href="" aria-label="Facebook"><img src="img/fb.svg" alt="Facebook"></a></li>
         <li><a href="" aria-label="Vkontakte"><img src="img/vk.svg" alt="Vkontakte"></a></li>
@@ -187,7 +197,7 @@
       <p><a href="">Экологические стандарты</a></p>
     </section>
     <section>
-      <h4>Разработка</h4>
+      <h5>Разработка</h5>
       <img src="img/logo-htmlacademy.svg" alt="">
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         Сделано в HTML Academy ©2019

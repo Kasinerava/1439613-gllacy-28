@@ -15,45 +15,49 @@ body {
     color: var(--basic-white) ;
     background-color: var(--basic-green);
 }
-
-
-.main-nav {
+.header{
+  position: absolute;
+  top:0;
+  width:100%;
+}
+.nav {
   display: flex;
-  width: 1146px;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  margin: 0;
 }
 
-.logo {
+.nav-logo {
   margin-left: 27px;
   margin-top: 11px;
   display: flex;
   flex-basis: 13%;
 }
 
-.menu {
+.nav-menu {
   list-style-type: none;
   display: flex;
   flex-basis: 30%;
   padding-left: 24px;
   flex-grow: 1;
+  font-weight: 700;
 }
 
-.menu a {
+.nav-menu a {
   margin-right: 32px;
   text-decoration-line: none;
   color: white;
   border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
-.user-action{
+.nav-user {
   list-style-type: none;
   display: flex;
   flex-basis: 20%;
 }
 
-.user-action a{
+.nav-user a{
   font-size: 14px;
   font-weight: 400;
   color: white;
@@ -66,29 +70,77 @@ body {
   padding-right: 16px;
   border-radius: 50px;
 }
-.user-action .loupe {
+.nav-loupe a{
   background-image: url("../img/loupe.svg");
+  background-position: center;
   background-repeat: no-repeat;
-
 }
-.loupe .loupe-border{
- border-radius: 100%;
+.nav-loupe a{
   padding-left: 16px;
 }
-.user-action .enter {
+
+.nav-enter a{
   background-image: url("../img/entrance.svg");
   background-repeat: no-repeat;
+  background-position: left;
 }
 
-.user-action .basket{
+.nav-basket a{
   background-image: url("../img/basket.svg");
   background-repeat: no-repeat;
+  background-position: left;
 }
-.proposal-1 {
+
+.header-contacts {
+  text-align: right;
+  margin-right: 27px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+.header-contacts a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
+
+.nav-list {
+  display: none;
+}
+
+.main-form {
+  display: none;
+}
+
+.nav-search {
+  display: none;
+}
+.section-proposal {
   display: flex;
-  flex-wrap: wrap;
+  background-image: url("../img/proposal-1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:100vh;
+  background-size: contain;
+  margin-top: -165px;
 }
-.button-1 {
+
+.section-proposal-1 {
+  list-style-type: none;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  justify-content: center;
+  line-height: 1.0;
+}
+
+.section-button-1 {
   background-color: rgba(242,104,67);
   border-style: none;
   padding-top: 10px;
@@ -99,35 +151,72 @@ body {
   color: white;
   font-size: 32px;
   font-weight: 700;
+  margin-left:196px;
 }
 
-.menu .list{
+.section-proposal-2 {
+  display: none;
+}
+.section-proposal-3 {
   display: none;
 }
 
-.user {
-  display: none;
-}
-
-.user-action .search {
-  display: none;
-}
-.proposal-1 {
+.main-news {
   display: flex;
-  background-image: url("../img/proposal-1.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  max-width: 1146px;
   width: 100%;
-  height:100vh;
-  background-size: contain;
-}
-h1 {
-  font-size: 60px;
-  font-weight: 700;
-  text-align: center;
-  padding-top: 350px;
-  padding-left: 265px;
+  list-style-type: none;
 }
 
+.main-news-1 {
+  display: flex;
+  max-width: 560px;
+  background-image: url("../img/berry-back.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+}
+.main-news-text {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-left: 16px;
+  max-width: 514px;
+}
+
+.main-news-title {
+  font-size: 35px;
+}
+
+.news-button-1,
+.news-button-2 {
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+  background-color: rgba(242,104,67);
+  border-style: none;
+  border-radius: 50px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-left: 374px;
+  margin-top: 42px;
+  margin-right: 22px;
+  margin-bottom: 22px;
+}
+
+.news-button-2 {
+  margin-left: 347px;
+}
+
+.main-news-2 {
+  display: flex;
+  max-width: 560px;
+  background-image: url("../img/choco-back.png");
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  background-size: cover;
+  margin-left: 26px;
+}
