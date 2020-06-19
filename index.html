@@ -5,10 +5,13 @@
     <title>HTML Academy: Глейси</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
-  <header>
-    <nav class="nav">
+  <div class="site-wrapper">
+    <div class="container">
+  <header class="main-header">
+      <nav class="nav">
       <a>
         <img src="img/logo.svg" alt="" class="nav-logo">
       </a>
@@ -30,16 +33,16 @@
       <li class="nav-loupe">
         <a href="" aria-label="Поиск">
         </a>
-        <input type="search" placeholder="Что ищем?" class="nav-search">
+        <input type="search" placeholder="Что ищем?" class="nav-search" name="Поиск">
       </li>
         <li class="nav-enter">
-          <a class="" aria-label="Вход">
+          <a class="" aria-label="Вход" href="">
           Вход
         </a>
           <form action="https://echo.htmlacademy.ru" method="post" class="main-form">
             <p>
               <label class="visually-hidden" for="e-mail">Электронная почта</label>
-              <input type="text" id="e-mail" name="e-mail" placeholder="Электронная почта">
+              <input type="text" id="e-mail" name="email" placeholder="Электронная почта">
             </p>
             <p>
               <label for="userpassword">Пароль</label>
@@ -51,7 +54,7 @@
           </form>
           </li>
           <li class="nav-basket">
-          <a class="" aria-label="Корзина">
+          <a class="" aria-label="Корзина" href="">
             Пусто
           </a>
           </li>
@@ -62,20 +65,29 @@
     </div>
   </header>
   <main>
-    <section class="section-proposal">
-      <ul class="section-proposal-1">
-      <li><h2>Крем-брюле и пломбир <br> с малиновым джемом</h2></li>
-      <li><input type="button" value="Давайте оба!" class="section-button-1"></li>
+    <section class="slider">
+      <ul class="slider-list">
+      <li class="section-proposal-1 slide slide-current">
+        <h2 class="slide-title">Крем-брюле и пломбир <br> с малиновым джемом
+        </h2>
+        <a type="button" href="#" class="button"> Давайте оба! </a>
+      </li>
+      <li class="section-proposal-2 slide ">
+        <h2 class="slide-title">Шоколадный пломбир <br> и лимонный сорбет</h2>
+        <a type="button" href="#"  class="button"> Давайте оба! </a>
+      </li>
+      <li class="section-proposal-3 slide">
+        <h2 class="slide-title">Пломбир с помадкой <br> и клубничный щербет</h2>
+        <a type="button" href="#"  class="button"> Давайте оба! </a>
+      </li>
       </ul>
-      <ul class="section-proposal-2">
-        <li><h2>Шоколадный пломбир <br> и лимонный сорбет</h2></li>
-        <li><input type="button" value="Давайте оба!" class="section-button-2"></li>
-      </ul>
-      <ul class="section-proposal-3">
-        <li><h2>Пломбир с помадкой <br> и клубничный щербет</h2></li>
-        <li><input type="button" value="Давайте оба!" class="section-button-3"></li>
-      </ul>
+      <div class="slider-controls">
+        <button class="current" type="button" aria-label="Первый слайд"></button>
+        <button type="button" aria-label="Второй слайд"></button>
+        <button type="button" aria-label="Третий слайд"></button>
+      </div>
     </section>
+    <section class="section-main-news">
     <ul class="main-news">
     <li class="main-news-1"><article>
       <p class="main-news-text">
@@ -93,6 +105,7 @@
     </article>
     </li>
     </ul>
+    </section>
     <section class="hits">
       <h3 class="hits-title">Хиты</h3>
       <ul class="hits-list">
@@ -113,7 +126,7 @@
         </li>
         <li class="hit-4">
           <img src="img/hit-four.png" alt="">
-          <a href="" class="hits-name">Сливочное крем-брюле<br> с карамельной подливкой</a>
+          <a href="" class="hits-name">Сливочное крем-брюле<br>с карамельной подливкой</a>
           <p class="hits-text">415 &#8381;<span class="hits-kg">/кг</span></p>
         </li>
       </ul>
@@ -135,9 +148,9 @@
           мороженому растаять в пути и позволяет сохранить превосходный вкус.
         </p>
     </section>
-    <section class="section-news">
+    <section class="">
       <h4>Новости</h4>
-      <ul>
+      <ul class="section-news">
         <li class="section-news-1">
           <p class="section-news-1-title">Новое в нашем блоге</p>
           <a class="section-news-1-text">10 способов сервировки фруктовых щербетов <br> к столу</a>
@@ -148,18 +161,17 @@
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
       </p>
       <form class="section-news-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="e-mail">
-          <label for="e-mail"></label>
-          <input id="e-mail" type="email" name="e-mail" placeholder="email@example.com">
-        </p>
+      <label for="mail">
+        <input id="mail" type="email" name="e-mail" placeholder="email@example.com">
+      </label>
       </form>
       <button class="section-news-button">Отправить</button>
         </article>
         </li>
       </ul>
     </section>
-    <section>
-      <img src="img/map.png" alt="">
+    <section class="section-map">
+      <img src="" alt="">
       <img src="img/pin.svg" alt="">
       <div>
         <p>
@@ -171,7 +183,7 @@
             <fieldset>
           <h2>Мы обязательно вам ответим!</h2>
           <label for="name"><input type="text" name="name" id="name" placeholder="Как вас зовут?"></label>
-          <label for="email"><input type="email" name="e-mail" id="email" placeholder="Ваша почта для ответа?" required></label>
+          <label for="e-mail"><input type="email" name="e-mail" id="email" placeholder="Ваша почта для ответа?" required></label>
           <label for="comment"></label><textarea name="comment" id="comment" rows="10">Напишите что-нибудь...</textarea>
           <input type="submit" name="submit" value="Отправить">
           <button type="button"></button>
@@ -208,5 +220,7 @@
       </a>
     </section>
   </footer>
+  </div>
+  </div>
   </body>
 </html>
