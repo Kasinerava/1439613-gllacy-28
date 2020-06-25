@@ -31,12 +31,12 @@
       </ul>
       <ul class="nav-user">
       <li class="nav-loupe">
-        <a href="" aria-label="Поиск">
+        <a href="" aria-label="Поиск" class="url-loupe">
         </a>
         <input type="search" placeholder="Что ищем?" class="nav-search" name="Поиск">
       </li>
         <li class="nav-enter">
-          <a class="" aria-label="Вход" href="">
+          <a class="url-enter" aria-label="Вход" href="">
           Вход
         </a>
           <form action="https://echo.htmlacademy.ru" method="post" class="main-form">
@@ -64,8 +64,10 @@
       <p>c 10 до 20, ежедневно<br><a href="tel:+78124502525">8 812 450-25-25</a></p>
     </div>
   </header>
+    </div>
   <main>
     <section class="slider">
+      <div class="container">
       <ul class="slider-list">
       <li class="section-proposal-1 slide slide-current">
         <h2 class="slide-title">Крем-брюле и пломбир <br> с малиновым джемом
@@ -86,8 +88,10 @@
         <button type="button" aria-label="Второй слайд"></button>
         <button type="button" aria-label="Третий слайд"></button>
       </div>
+      </div>
     </section>
     <section class="section-main-news">
+      <div class="container">
     <ul class="main-news">
     <li class="main-news-1">
       <article>
@@ -106,8 +110,10 @@
     </article>
     </li>
     </ul>
+      </div>
     </section>
     <section class="hits">
+      <div class="container">
       <h3 class="hits-title">Хиты</h3>
       <ul class="hits-list">
         <li class="hit-1">
@@ -131,8 +137,11 @@
           <p class="hits-text">415 &#8381;<span class="hits-kg">/кг</span></p>
         </li>
       </ul>
+      </div>
     </section>
-    <section class="section-info">
+    <section>
+      <div class="container">
+        <div class="section-info">
       <h3>О магазине</h3>
       <p class="section-title">Магазин Глэйси - это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</p>
         <p class="section-info-time">Всё наше мороженое изготавливается на собственном производстве,
@@ -148,8 +157,11 @@
         <p class="section-info-delivery">Доставка нашего мороженого до заказчиков осуществляется<br> в специальном термопаке, который не дает
           мороженому растаять в пути и позволяет сохранить превосходный вкус.
         </p>
+        </div>
+      </div>
     </section>
-    <section class="">
+    <section>
+      <div class="container">
       <h4>Новости</h4>
       <ul class="section-news">
         <li class="section-news-1">
@@ -161,20 +173,24 @@
       <p class="section-news-2-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
       </p>
-      <form class="section-news-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="section-news-form">
+      <form action="https://echo.htmlacademy.ru" method="post">
       <label for="mail">
         <input id="mail" type="email" name="e-mail" placeholder="email@example.com">
       </label>
       </form>
       <button class="section-news-button">Отправить</button>
+          </div>
         </article>
         </li>
       </ul>
+      </div>
     </section>
     <section class="section-contacts">
-      <div class="section-map">
-      <img src="" alt="">
-      <img src="img/pin.svg" alt="">
+      <div class="container-map">
+      <img class="map" src="img/map.png" alt="Карта">
+      </div>
+      <img src="img/pin.svg" alt="" class="position">
       <div class="form-connection">
         <p class="shop">
           Адрес главного офиса <br> и офлайн-магазина:<address>ул. Большая Конюшенная, 19/8, Санкт-Петербург</address>
@@ -191,8 +207,7 @@
           <button type="button"></button>
             </fieldset>
         </form>
-      </div>
-    </div>
+        </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -214,7 +229,7 @@
       <li><a href="" class="documents">Наши документы</a></li>
       <li><a href="" class="production">О производстве</a></li>
       <li><a href="" class="standarts">Экологические стандарты</a></li>
-        <ul/>
+        </ul>
     </section>
     <section class="logo-html">
       <h5>Разработка</h5>
@@ -224,7 +239,6 @@
       </a>
     </section>
   </footer>
-  </div>
   </div>
   </body>
 </html>

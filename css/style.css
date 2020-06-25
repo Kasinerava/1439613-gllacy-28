@@ -25,9 +25,16 @@ body {
   background-color: #849d8f;
   background-image: url("../img/proposal-1.png");
 }
-
+.site-wrapper-2 {
+  background-color: #8996a6;
+  background-image: url("../img/proposal-2.png");
+}
+.site-wrapper-3 {
+  background-color: #9d8b84;
+  background-image: url("../img/proposal-3.png");
+}
 .container {
-  width: 1146px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -101,7 +108,6 @@ body {
 .slider-controls {
   position: absolute;
   bottom: 63px;
-  margin-left: 27px;
   z-index: 20;
   display: flex;
   width: 67px;
@@ -128,7 +134,6 @@ body {
 }
 
 .nav-logo {
-  margin-left: 27px;
   margin-top: 11px;
   display: block;
 }
@@ -154,7 +159,6 @@ body {
   display: flex;
   flex-basis: 244px;
   justify-content: center;
-  margin-right: 16px;
 }
 
 .nav-user a{
@@ -164,7 +168,6 @@ body {
   font-weight: 400;
   color: white;
   text-decoration: none;
-  margin-right: 10px;
   min-height: 15px;
   background-color: rgba(255,255,255,0.2);
   padding-top: 8px;
@@ -172,6 +175,10 @@ body {
   padding-left: 44px;
   padding-right: 16px;
   border-radius: 50px;
+}
+.url-enter,
+.url-loupe {
+  margin-right: 10px;
 }
 
 .nav-loupe a::before{
@@ -194,7 +201,6 @@ body {
 
 .header-contacts {
   text-align: right;
-  margin-right: 27px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.7;
@@ -228,7 +234,7 @@ body {
   width: 100%;
   list-style-type: none;
   margin-top: 20px;
-  margin-left: -27px;
+  padding:0;
 }
 
 .main-news-1 {
@@ -344,7 +350,6 @@ h3 {
   background-image: url("../img/pattern.png");
   border-radius: 15px;
   margin-top: 70px;
-  margin-left: 27px;
   color: rgba(50, 50, 50, 1);
 }
 .section-title {
@@ -417,7 +422,7 @@ h4 {
   width: 100%;
   list-style-type: none;
   margin-top: 40px;
-  margin-left: -27px;
+  padding: 0;
 }
 
 .section-news-1 {
@@ -484,7 +489,7 @@ h4 {
   padding-right: 19px;
   padding-top: 13px;
   padding-bottom: 13px;
-  margin-left: 404px;
+  margin-left: 10px;
 }
 
 .section-news-form input{
@@ -502,19 +507,15 @@ h4 {
   min-width: 1200px;
   justify-content: space-between;
 }
-.section-map {
-  background-image: url("../img/map.png");
-  background-repeat: no-repeat;
+.container-map {
   width: 100%;
-  height: 430px;
   min-width: 1200px;
-  object-fit: cover;
+  margin: 0 auto;
+  padding: 0;
 }
-.section-map img {
-  margin-left: 130px;
-  margin-top: 136px;
-}
+
 .form-connection {
+  position: absolute;
   color: var(--basic-black);
   background-color: var(--basic-white);
   max-width: 225px;
@@ -526,8 +527,14 @@ h4 {
   padding-right: 53px;
   line-height: 1.5;
   margin-left: 870px;
-  margin-top: -220px;
+  margin-top: 62px;
 }
+.position {
+  position: absolute;
+  margin-left: 266px;
+  margin-top: 136px;
+}
+
 .form-connection address,
 .form-connection a {
   color: var(--basic-black);
