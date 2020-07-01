@@ -103,16 +103,16 @@ body {
 
 .slider-controls {
   position: absolute;
-  margin-top: -565px;
+  margin-top: -500px;
   z-index: 20;
   display: flex;
-  width: 67px;
+  width: 79px;
   justify-content: space-between;
 }
 .slider-controls button {
   padding: 0;
-  width: 17px;
-  height: 17px;
+  width: 21px;
+  height: 21px;
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -212,6 +212,8 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.7;
+  padding:0;
+  margin-top: -22px;
 }
 .header-contacts a {
   text-decoration: none;
@@ -602,6 +604,7 @@ h4 {
   max-width: 164px;
   justify-content: space-between;
   padding-top: 16px;
+  padding-left: 0;
 }
 .socials a{
   padding-left: 12px;
@@ -631,8 +634,8 @@ h4 {
 .provider::before{
   position: absolute;
   content: url("../img/heart.svg");
-  left: 605px;
-  top: 30px;
+  left: 585px;
+  top: 31px;
 }
 .provider {
   font-weight: 600;
@@ -650,6 +653,7 @@ h5 {
 .logo-html {
   max-width: 190px;
   padding-top: 18px;
+  padding-right: 0;
 }
 .logo-html img {
   display: block;
@@ -983,7 +987,7 @@ select {
   display: flex;
   max-width: 1146px;
   margin-top: 87px;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   margin-right: auto;
   margin-left: 170px;
   margin-right: 0;
@@ -998,15 +1002,27 @@ select {
   text-decoration: none;
   color:var(--basic-white);
   margin-right: 20px;
+  font-weight: 500;
 }
 .pages .active {
   color:var(--basic-black);
   display: block;
-  line-height: 0;
+  padding:8px 13px;
+  border:none;
+  background-color: var(--basic-white);
   border-radius: 26px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-right: 8px;
-  padding-bottom: 8px;
-  background-color: var(--basic-white)
+  margin-top: -8px;
+}
+.border-top-catalog {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.page:last-child::after {
+  content: url(../img/icon-right-small.svg);
+  position: absolute;
+}
+.page:first-child::after {
+  content: url(../img/icon-left-small.svg);
+  position: relative;
+  left:-25px;
+  top:-25px;
 }
