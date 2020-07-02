@@ -26,12 +26,14 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   height: 114px;
-  top:0;
   width:100%;
 }
 .header-contacts {
   display: inline-block;
   flex-basis: 100%;
+}
+.header-contacts p {
+  margin:0;
 }
 .slider {
   position: relative;
@@ -50,6 +52,7 @@ body {
   background-position: top center;
   min-height: 750px;
   padding-bottom: 110px;
+  text-align: center;
 }
 .section-proposal-1 {
   background-image: url("../img/Proposal-1-2.png");
@@ -74,7 +77,6 @@ body {
   padding-top: 80px;
 }
 .button {
-  position: absolute;
   display: inline-block;
   padding: 11px 40px;
   font-weight: 600;
@@ -91,7 +93,7 @@ body {
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
   border: none;
   cursor: pointer;
-  top:544px;
+  margin-top:24px;
   left: 621px;
 }
 .button:hover {
@@ -129,11 +131,10 @@ body {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
 }
 
 .nav-logo {
-  margin-top: 11px;
+  padding-top: 11px;
   display: block;
 }
 
@@ -213,10 +214,8 @@ body {
   width: 100%;
   text-align: right;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.7;
-  padding:0;
-  margin-top: -20px;
 }
 .header-contacts a {
   text-decoration: none;
@@ -317,14 +316,11 @@ body {
   justify-content: space-between;
   width: 100%;
   list-style-type: none;
-  margin-top: 345px;
-  margin-left: -27px;
   padding:0;
-  padding-left: 27px;
+  padding-top: 25px;
+  max-height: 324px;
 }
 .hits-list img {
-  position: absolute;
-  top: -304px;
   justify-content: center;
   display: flex;
 }
@@ -340,19 +336,18 @@ body {
   position: relative;
   font-size: 45px;
   font-weight: 700;
-  margin-top: -120px;
+  transform: translateY(-160px);
 }
 .hits-kg {
   font-size: 30px;
 }
 .hits-name {
-  position: relative;
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: white;
   text-align: center;
   line-height: 1.4;
-  margin-top: -25px;
+  padding-top: 12px;
 }
 
 span.underlined{
@@ -366,8 +361,8 @@ span.underlined{
 {
   content: url("../img/hit.svg");
   position: absolute;
-  top:-280px;
   left:1px;
+  top:0px;
 }
 h3 {
   display: none;
@@ -377,7 +372,7 @@ h3 {
   flex-wrap: wrap;
   background-image: url("../img/pattern.png");
   border-radius: 15px;
-  margin-top: 60px;
+  margin-top: 40px;
   color: rgba(50, 50, 50, 1);
 }
 .section-title {
@@ -387,7 +382,12 @@ h3 {
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
+  padding-top: 24px;
 }
+.section-info p{
+  margin:0;
+}
+
 .section-info-time,
 .section-info-eco,
 .section-info-delivery,
@@ -395,9 +395,9 @@ h3 {
   display: flex;
   max-width: 485px;
   line-height: 1.4;
-  margin-top: -10px;
   position: relative;
   padding-bottom: 10px;
+  padding-top: 16px;
 }
 .section-info-time {
   padding-left: 75px;
@@ -408,39 +408,40 @@ h3 {
   order: 1;
   padding-left: 75px;
   padding-right: 82px;
-  margin-top: -2px;
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 .section-info-delivery {
   order: 2;
-  margin-top: -2px;
+  padding-top: 10px;
 }
 
 .section-info-time::before {
   content: url("../img/ice-cream.svg");
   position: absolute;
   left: 20px;
-  top: -6px;
+  top:5px;
 }
 
 .section-info-eco::before {
   content: url("../img/eco.svg");
   position: absolute;
   left: 20px;
-  top: -6px;
+  top:5px;
 }
 
 .section-info-longterm::before {
   content: url("../img/cow.svg");
   position: absolute;
-  left: -55px;
-  top:-6px;
+  transform: translateX(-55px);
+  top:5px;
 }
 
 .section-info-delivery::before {
   content: url("../img/thermometer.svg");
   position: absolute;
-  left: -55px;
-  top:-6px;
+  transform: translateX(-55px);
+  top:5px;
 }
 h4 {
   display: none;
@@ -454,13 +455,18 @@ h4 {
   padding: 0;
 }
 
+.section-news p{
+  margin:0;
+}
+
 .section-news-1 {
   display: flex;
   flex-wrap: wrap;
   flex-basis: 50%;
   max-width: 560px;
+  height: 220px;
   background-image: url("../img/strawberry.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 15px;
   color: var(--basic-black);
@@ -471,7 +477,7 @@ h4 {
   font-weight: 500;
   padding-left: 20px;
   position: relative;
-  top:6px;
+  top:21px;
 }
 
 .section-news-1-text {
@@ -480,10 +486,10 @@ h4 {
   font-weight: 700;
   font-size: 24px;
   max-width: 400px;
-  top: -4px;
   padding-bottom: 94px;
   padding-left: 20px;
   line-height: 30px;
+  top:15px;
 }
 
 .section-news-underlined {
@@ -511,12 +517,12 @@ h4 {
   line-height: 1.5;
   padding-left: 26px;
   padding-right: 22px;
+  padding-bottom: 62px;
   position: relative;
-  top:11px;
+  top:26px;
 }
 .section-news-form {
   margin-left: 25px;
-  margin-top: 47px;
   display: flex;
 }
 .section-news-button {
@@ -552,27 +558,20 @@ h4 {
   justify-content: space-between;
   padding-top: 20px;
 }
-.container-map {
-  width: 100%;
-  min-width: 1200px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.container-map img {
+.map {
+  display: flex;
   width: 100%;
 }
-
 .form-connection {
   position: absolute;
   color: var(--basic-black);
   background-color: var(--basic-white);
   max-width: 225px;
+  height: 29px;
   font-size:14px;
   border-radius: 15px;
   padding-left: 25px;
   padding-top: 15px;
-  padding-bottom: 20px;
   padding-right: 53px;
   line-height: 1.5;
   margin-left: 1030px;
@@ -584,6 +583,13 @@ h4 {
   margin-top: 206px;
 }
 
+.form-connection p{
+  margin:0;
+}
+
+.form-connection .shop {
+  padding-top: 14px;
+}
 .form-connection address,
 .form-connection a {
   color: var(--basic-black);
@@ -593,12 +599,11 @@ h4 {
   text-decoration: none;
 }
 .form-connection address {
-  margin-top: -15px;
   line-height: 24px;
 }
 .form-order-phone {
-  padding-top: 7px;
-  padding-bottom: 20px;
+  padding-top: 18px;
+  padding-bottom: 27px;
   line-height: 22px;
 }
 .form-order-phone a{
@@ -623,7 +628,6 @@ h4 {
   border: none;
   cursor: pointer;
   position: relative;
-  top:-9px;
 }
 
 .form-answer {
@@ -710,7 +714,7 @@ h5 {
 }
 
 .filter-sorting {
-  margin-top: 111px;
+  margin-top: 100px;
 }
 .page-catalog {
   display: flex;
@@ -746,8 +750,8 @@ h5 {
 .nav-menu .current {
   border-bottom: none;
   background-color: rgba(208, 112, 88, 1);
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 5px;
+  padding-bottom: 7px;
   padding-left: 14px;
   padding-right: 14px;
   border-radius: 50px;
@@ -765,6 +769,19 @@ h5 {
   color: var(--basic-black);
   font-weight: 500;
 }
+.full-basket a::before {
+  content: url(../img/basket-red.svg);
+  position: absolute;
+  left:16px;
+  align-content: center;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 500;
+  padding: 0;
+  margin:0;
+}
 .main-filter {
   display: flex;
   flex-wrap: wrap;
@@ -772,6 +789,7 @@ h5 {
   max-width: 1146px;
   margin: 0 auto;
   padding: 0;
+  padding-top: 30px;
 }
 .sorting-filter {
   max-width: 200px;
@@ -797,6 +815,7 @@ h5 {
 .price {
   margin: 0;
   padding: 0;
+  padding-left: 15px;
   border: none;
 }
 .price legend {
@@ -806,14 +825,15 @@ h5 {
 }
 .range-price {
   width: 218px;
-  margin-top: 7px;
+  margin-top: 6px;
 }
+
 .range-controls {
   position: relative;
-  height: 18px;
+  height: 20px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
-  padding-top:18px;
+  padding-top:16px;
   padding-left: 21px;
   padding-right: 21px;
 }
@@ -860,7 +880,7 @@ h5 {
 .filter legend {
   font-size: 14px;
   font-weight: 400;
-  padding-left: 20px;
+  padding-left: 18px;
 }
 .filter-options {
   border-style: none;
@@ -870,6 +890,7 @@ h5 {
   border-radius: 50px;
   color: var(--basic-white);
   padding-left: 16px;
+  width: 196px;
 }
 .select::after {
   content:url(../img/icon-down-dir.svg);
@@ -1010,19 +1031,11 @@ select {
 
 .hit {
   width:25%;
-  margin-top: 40px;
-}
-.hits-name-row {
+  margin-top: 340px;
   position: relative;
-  display: inline-block;
-  text-decoration: none;
-  max-width: 260px;
-  text-align: center;
-  padding-top: 13px;
-  color: white;
-  text-align: center;
-  line-height: 1.4;
+  max-width: 267px;
 }
+
 .container-pages {
   display: flex;
   max-width: 1146px;
