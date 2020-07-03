@@ -27,6 +27,7 @@ body {
   justify-content: space-between;
   height: 114px;
   width:100%;
+  top:0;
 }
 .header-contacts {
   display: inline-block;
@@ -912,22 +913,22 @@ select {
 }
 .fat {
   display: flex;
-  width: 425px;
-  margin-top: 7px;
+  width: 392px;
+  margin-top: 6px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 7px;
+  padding-bottom: 11px;
   justify-content: space-between;
   align-items: center;
-  margin-left: 15px;
+  margin-left: 14px;
 }
 .fat-control legend {
   font-size: 14px;
   font-weight: 400;
-  margin-left: 25px;
+  margin-left: 32px;
 }
 .fat-control {
   margin: 0;
@@ -951,13 +952,12 @@ select {
   display: inline-block;
   left:3px;
   position: absolute;
-  top:-1px;
 }
 .fat input[type=radio]:checked + label:before {
   content: url(../img/radio-on.svg);
 }
 .fill-control {
-  margin-top: 14px;
+  margin-top: 12px;
   margin-left: 0;
   padding: 0;
   border: none;
@@ -965,16 +965,16 @@ select {
 .fill-control legend {
   font-size: 14px;
   font-weight: 400;
-  margin-left: 20px;
+  margin-left: 17px;
 }
 .fill {
   display: flex;
-  width: 711px;
+  width: 680px;
   margin-top: 7px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 11px;
+  padding-right: 19px;
   padding-top: 10px;
   padding-bottom: 10px;
   justify-content: space-between;
@@ -1004,19 +1004,19 @@ select {
 }
 
 .fill-button {
-  position: absolute;
+  position: relative;
+  top:36px;
   font-weight: 400;
   cursor: pointer;
-  width: 132px;
-  left: 925px;
-  top:291px;
+  height: 36px;
+  width: 139px;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.2);
   color: var(--basic-white);
   border:2px solid #ffffff;
   padding-top: 6px;
   padding-bottom: 7px;
-  margin-left: 14px;
+  margin-left: 16px;
 }
 
 .hits-catalog{
@@ -1031,21 +1031,23 @@ select {
 
 .hit {
   width:25%;
-  margin-top: 340px;
+  margin-top: 40px;
   position: relative;
   max-width: 267px;
+  height: 320px;
 }
 
 .container-pages {
   display: flex;
   max-width: 1146px;
-  margin-top: 87px;
+  margin-top: 820px;
   margin-bottom: 0;
   margin-right: auto;
-  margin-left: 170px;
+  margin-left: 171px;
   margin-right: 0;
   flex-direction: row-reverse;
   justify-content: flex-start;
+  padding-bottom: 16px;
 }
 .pages {
   display: flex;
@@ -1056,15 +1058,15 @@ select {
   color:var(--basic-white);
   margin-right: 20px;
   font-weight: 500;
+  align-content: center;
 }
 .pages .active {
   color:var(--basic-black);
   display: block;
-  padding:8px 13px;
+  padding:3px 8px;
   border:none;
   background-color: var(--basic-white);
   border-radius: 26px;
-  margin-top: -8px;
 }
 .border-top-catalog {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -1072,10 +1074,11 @@ select {
 .page:last-child::after {
   content: url(../img/icon-right-small.svg);
   position: absolute;
+  padding-left:8px;
+  padding-top: 2px;
 }
 .page:first-child::after {
   content: url(../img/icon-left-small.svg);
-  position: relative;
-  left:-25px;
-  top:-25px;
+  position: absolute;
+  transform: translateX(-18px);
 }
