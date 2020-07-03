@@ -228,6 +228,9 @@ body {
   display: none;
 }
 
+.login-show {
+  display: none;
+}
 .modal-login {
   position: absolute;
   top:59px;

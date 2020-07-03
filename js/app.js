@@ -8,6 +8,6 @@
 		evt.preventDefault();
 		modal_login.classList.toggle("login-show");
 		modal_login.classList.toggle("modal-login");
-	})
+	});
 
 </script>
