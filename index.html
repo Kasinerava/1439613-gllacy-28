@@ -16,7 +16,8 @@
       </a>
       <ul class="nav-menu">
         <li>
-          <a href="catalog.html" aria-label="Каталог">Каталог</a>
+          <a href="catalog.html" aria-label="Каталог" class="current-title">Каталог</a>
+          <section class="modal-catalog">
           <ul class="nav-list">
             <li><a href="catalog.html" aria-label="Новинки">Новинки</a></li>
             <li><a href="catalog.html" aria-label="Сливочное"> Сливочное</a></li>
@@ -24,19 +25,20 @@
             <li><a href="catalog.html" aria-label="Фруктовый лед"> Фруктовый лед</a></li>
             <li><a href="catalog.html" aria-label="Мелорин"> Мелорин</a></li>
           </ul>
+          </section>
         </li>
         <li><a href="catalog.html" aria-label="Доставка и оплата">Доставка и оплата</a></li>
         <li><a href="catalog.html" aria-label="О компании">О компании</a></li>
       </ul>
       <ul class="nav-user">
-        <li class="nav-loupe">
+        <li class="nav-loupe loupe-selected">
           <a href="" aria-label="Поиск" class="url-loupe">
           </a>
           <section class="modal-search">
           <input type="search" placeholder="Крем-брюле" class="nav-search" name="Поиск">
           </section>
         </li>
-        <li class="nav-enter">
+        <li class="nav-enter enter-selected">
           <a class="url-enter" aria-label="Вход" href="">
             Вход
           </a>
@@ -44,15 +46,19 @@
           <form action="https://echo.htmlacademy.ru" method="post" class="main-form">
             <p>
               <label class="visually-hidden" for="e-mail"></label>
-              <input type="text" id="e-mail" name="email" placeholder="email@example.com">
+              <input type="text" class ="e-mail" id="e-mail" name="email" required placeholder="email@example.com">
             </p>
             <p>
               <label for="userpassword"></label>
-              <input type="password" id="userpassword" name="password" placeholder="......">
+              <input type="password" id="userpassword" name="password" class="password" required placeholder="......">
             </p>
+            <p class="submit-login">
+              <p class="login">
             <a href="" class="login-password">Забыли пароль</a>
             <a href="" class="login-new">Новая регистрация</a>
+              </p>
             <button type="submit">Войти</button>
+            </p>
           </form>
           </section>
         </li>
@@ -123,23 +129,23 @@
       <ul class="hits-list">
         <li class="hit-1">
           <img src="img/hit-one.png" alt="">
-          <a href="" class="hits-name"><span class="underlined">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
           <p class="hits-text">310 &#8381;<span class="hits-kg">/кг</span></p>
+          <a href="" class="hits-name"><span class="underlined">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
         </li>
         <li class="hit-2">
           <img src="img/hit-two.png" alt="">
-          <a href="" class="hits-name"> <span class="underlined">Сливочно-кофейное с кусочками шоколада</span></a>
           <p class="hits-text">380 &#8381;<span class="hits-kg">/кг</span></p>
+          <a href="" class="hits-name"> <span class="underlined">Сливочно-кофейное с кусочками шоколада</span></a>
         </li>
         <li class="hit-3">
           <img src="img/hit-three.png" alt="">
-          <a href="" class="hits-name"><span class="underlined">Сливочно-клубничное с&nbsp;присыпкой из белого шоколада</span></a>
           <p class="hits-text">355 &#8381;<span class="hits-kg">/кг</span></p>
+          <a href="" class="hits-name"><span class="underlined">Сливочно-клубничное с&nbsp;присыпкой из белого шоколада</span></a>
         </li>
         <li class="hit-4">
           <img src="img/hit-four.png" alt="">
-          <a href="" class="hits-name"><span class="underlined">Сливочное крем-брюле с&nbsp;карамельной подливкой</span></a>
           <p class="hits-text">415 &#8381;<span class="hits-kg">/кг</span></p>
+          <a href="" class="hits-name"><span class="underlined">Сливочное крем-брюле с&nbsp;карамельной подливкой</span></a>
         </li>
       </ul>
     </div>
@@ -207,18 +213,19 @@
       <div class="form-order-phone"><p>Для заказов по телефону:<br> <a href="tel:+78124502525">8 812 450-25-25</a><br>(с 10 до 20 ежедневно)</p></div>
       
       <input type="button" value="Форма обратной связи" class="shop-button">
+      <section class="modal-feedback">
       <form action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form-answer">
           <h2>Мы обязательно вам ответим!</h2>
-          <label for="name"><input type="text" name="name" id="name" placeholder="Как вас зовут?"></label>
-          <label for="e-mail"><input type="email" name="e-mail" id="email" placeholder="Ваша почта для ответа?"
+          <label for="name"><input type="text" name="name" id="name" placeholder="Имя Фамилия"></label>
+          <label for="e-mail"><input type="email" name="e-mail" id="email" placeholder="email@example.com"
                                      required></label>
           <label for="comment"></label><textarea name="comment" id="comment"
-                                                 rows="10">Напишите что-нибудь...</textarea>
-          <input type="submit" name="submit" value="Отправить">
-          <button type="button"></button>
-        </fieldset>
+                                                 rows="10">В свободной форме
+                                               </textarea>
+          <input type="submit" name="submit" value="Отправить" class="submit-feedback">
+          <button type="button" class="close-feedback"></button>
       </form>
+      </section>
     </div>
   </section>
 </main>

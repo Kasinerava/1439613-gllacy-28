@@ -1,13 +1,9 @@
-<script>
-
 	let user_enter=document.querySelector("url-enter");
 	let modal_login=document.querySelector("modal-login");
 
-	link.addEventListener("click" funcrion(evt)
+	user_enter.addEventListener("click" function(evt)
 	{
 		evt.preventDefault();
 		modal_login.classList.toggle("login-show");
-		modal_login.classList.toggle("modal-login");
+		modal_login.classList.toggle("modal_login");
 	});
-
-</script>
