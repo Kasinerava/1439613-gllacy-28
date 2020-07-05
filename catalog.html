@@ -33,7 +33,7 @@
           <a class="url-enter" aria-label="Вход" href="">
             Вход
           </a>
-          <!-- <section class="modal-login">
+<!--           <section class="modal-login">
           <form action="https://echo.htmlacademy.ru" method="post" class="main-form">
             <p>
               <label class="visually-hidden" for="e-mail"></label>
@@ -232,7 +232,7 @@
         <li><a href="" aria-label="Twitter"><img src="img/twitter.svg" alt="Twitter"></a></li>
       </ul>
     </section>
-    <section>
+   <section>
       <h3>Дополнительная информация</h3>
       <ul class="additional-info">
         <li>
@@ -245,15 +245,27 @@
     </section>
     <section class="logo-html">
       <h5>Разработка</h5>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
       <img src="img/logo-htmlacademy.svg" alt="">
-      </a>
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         Сделано в <span>HTML Academy</span> ©2019
       </a>
     </section>
   </div>
 </footer>
+<section class="modal-feedback">
+      <form action="https://echo.htmlacademy.ru" method="post" class="feedback-form">
+          <h2>Мы обязательно вам ответим!</h2>
+          <button class="button-close" type="button"></button>
+          <label for="name"><input type="text" name="name" id="name" placeholder="Имя Фамилия"></label>
+          <label for="e-mail"><input type="email" name="e-mail" id="email" placeholder="email@example.com"
+                                     required></label>
+          <label for="comment"></label><textarea name="comment" id="comment"
+                                                 rows="10">В свободной форме
+                                               </textarea>
+          <input type="submit" name="submit" value="Отправить" class="submit-feedback">
+      </form>
+      </section>
+      <div class="overlay"></div>
 <script src="js/app.js"></script>
 </body>
 </html>
