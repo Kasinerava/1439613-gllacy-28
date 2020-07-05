@@ -30,6 +30,7 @@ body {
   top:0;
 }
 .header-contacts {
+  vertical-align: inherit;
   display: inline-block;
   flex-basis: 100%;
 }
@@ -177,6 +178,7 @@ body {
 }
 
 .nav-user a{
+  vertical-align: inherit;
   display: inline-block;
   position: relative;
   font-size: 14px;
@@ -226,8 +228,8 @@ body {
   position: absolute;
   left:16px;
 }
-
 .nav-user .url-loupe{
+  vertical-align: inherit;
   display: inline-block;
   background-color: rgba(255,255,255,0.2);
   padding:8px 16px;
