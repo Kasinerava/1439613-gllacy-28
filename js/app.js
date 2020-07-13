@@ -1,8 +1,9 @@
 let popup = document.querySelector(".modal-feedback");
+let shop = document.querySelector(".shop-button");
 let overlay = document.querySelector(".overlay");
 let close = document.querySelector(".button-close");
 
-link.addEventListener("click", function (evt) {
+shop.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-feedback-show");
   overlay.classList.add("overlay-show");
