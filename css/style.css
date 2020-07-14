@@ -51,14 +51,14 @@ body {
 }
 .slide {
   display: none;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
-  padding-bottom: 110px;
+  padding-bottom: 250px;
   text-align: center;
 }
 .section-proposal-1 {
-  background-image: url("../img/slider-3.png");
+  background-image: url("../img/slider-4.png");
 }
 .section-proposal-2 {
   background-image: url("../img/proposal-2.png");
@@ -472,7 +472,7 @@ body {
 
 /*Секция с предложениями*/
 .section-main-news {
-  margin-top: -86px;
+  margin-top: -226px;
 }
 
 .main-news {
@@ -1274,27 +1274,29 @@ h5 {
 /*Стилизация полной корзины*/
 
 .basket-items {
-  display: non;
+  display: none;
   right:0;
   top:40px;
   position: absolute;
   width:540px;
   background: #F8F7F4;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-  padding: 25px 20px;
+  padding: 20px 20px;
+  padding-left: 0;
   border-radius: 5px;
   color:#323232;
   font-size: 13px;
+  border-spacing: 0;
 }
-.choice-1 a{
+.choice-1 a,
+.choice-2 a
+{
   background-image: url("../img/cross-small.svg");
   background-repeat: no-repeat;
   border-radius: 0;
-}
-.choice-2 a {
-  background-image: url("../img/cross-small.svg");
-  background-repeat: no-repeat;
-  border-radius: 0;
+  left:21px;
+  padding-left: 21px;
+  margin-top: 15px;
 }
 .choice-1 a:before,
 .choice-2 a:before{
@@ -1302,16 +1304,34 @@ h5 {
 }
 .items-name-1 p {
   text-align: left;
+  font-size: 13px;
 }
 .items-name-2 p {
   text-align: left;
+  font-size: 13px;
 }
-
+.items-kg-1,
+.items-kg-2 {
+  font-size: 13px;
+  text-align: center;
+}
+.items-price-1,
+.items-price-2 {
+  font-size: 13px;
+  color:#ABABAB;
+  text-align: left;
+}
 .sum {
   text-align: right;
+  padding-top: 25px;
+  font-size: 15px;
+  font-weight: 600;
 }
 .basket-items tr:last-child {
   border-bottom: 1px solid #CACAC7;
+}
+.button-basket a:before {
+  content: none;
 }
 .full-basket:hover .basket-items {
   display: block;
