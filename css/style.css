@@ -58,7 +58,7 @@ body {
   text-align: center;
 }
 .section-proposal-1 {
-  background-image: url("../img/proposal-1-2.png");
+  background-image: url("../img/");
 }
 .section-proposal-2 {
   background-image: url("../img/proposal-2.png");
@@ -102,6 +102,7 @@ body {
 .button:hover {
   background: linear-gradient(to bottom, #f58669, #ec6f5e);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+  cursor: pointer;
 }
 
 .button:active {
@@ -145,6 +146,7 @@ body {
 }
 
 .nav-menu {
+  margin-top: 25px;
   list-style-type: none;
   display: flex;
   flex-basis: 357px;
@@ -155,23 +157,30 @@ body {
 .nav-menu a {
   text-decoration-line: none;
   color: white;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-
-.nav-menu li:hover,
-.nav-menu li:focus {
-  color: rgba(50, 50, 50, 1);
-  background-color: #f7f6f3;
-  border-radius: 50px;
-}
-
-.nav-menu li {
   margin-right: 12px;
-  margin-left: 0;
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 7px;
   padding-top: 5px;
+}
+.dash-index:after {
+  content: url("../img/dash.svg");
+  position: absolute;
+  top:32px;
+  left:356px;
+}
+.dash-catalog:after {
+  content: url("../img/dash.svg");
+  position: absolute;
+  top:32px;
+  left:362px;
+}
+.nav-menu li:hover a,
+.nav-menu li:focus a {
+  color: rgba(50, 50, 50, 1);
+  background-color: #f7f6f3;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 .nav-user {
@@ -271,7 +280,7 @@ body {
 }
 .nav-list {
   position: absolute;
-  top: 36px;
+  top: 30px;
   left: -5px;
   z-index: 3;
   display: none;
@@ -297,11 +306,11 @@ body {
 .main-list:hover .nav-list {
   display: block;
 }
-.nav-list a{
+.nav-list li a{
   display: block;
+  margin-right: 0;
   padding-top: 8px;
   padding-left: 21px;
-  padding-bottom: 7px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -312,12 +321,12 @@ body {
 .nav-list li:last-child {
   margin-bottom: 6px;
 }
-.nav-list a:hover,
-.nav-list a:focus {
+.nav-list li a:hover,
+.nav-list li a:focus {
   background-color: #fbded7;
   border-radius: 0;
 }
-.nav-list a:active {
+.nav-list li a:active {
   background-color: #f6b5a5;
 }
 
@@ -478,6 +487,7 @@ body {
 }
 
 .main-news-1 {
+  position: relative;
   display: flex;
   flex:0 49%;
   background-image: url("../img/berry-back.png");
@@ -504,8 +514,9 @@ body {
 .news-button-1,
 .news-button-2 {
   position: absolute;
-  top:159px;
   font-size: 18px;
+  bottom: 22px;
+  right:22px;
   color: white;
   font-weight: 600;
   background: linear-gradient(to bottom, #f26843, #e74a35);
@@ -519,12 +530,7 @@ body {
   padding-right: 22px;
   text-decoration-line: none;
 }
-.news-button-1 {
-  margin-left: 374px;
-}
-.news-button-2 {
-  margin-left: 347px;
-}
+
 .news-button-1:hover,
 .news-button-2:hover {
   background:linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
@@ -539,6 +545,7 @@ body {
   border-radius: 50px;
 }
 .main-news-2 {
+  position: relative;
   display: flex;
   flex:0 49%;
   background-image: url("../img/choco-back.png");
@@ -608,9 +615,10 @@ body {
 .hit-main:focus::after  {
   background-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
-.hit-main a:hover,
-.hit-main a:active {
+.hit-main:hover a,
+.hit-main:active a {
   color: #ffbc9e;
 }
 .hits button {
@@ -622,6 +630,7 @@ body {
   display: block;
   z-index: 3;
   position: absolute;
+  color:#fff;
 }
 .hit-main:hover,
 .hit-main:focus {
@@ -1209,13 +1218,13 @@ h5 {
 .page-catalog a {
   text-decoration: none;
   color: var(--basic-white);
-  border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 .page-catalog li {
   position: relative;
   margin-right: 22px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.page-catalog .current {
+.page-catalog li:last-child {
   border-bottom: none;
 }
 .page-catalog-2::before {
@@ -1228,8 +1237,13 @@ h5 {
   position: absolute;
   right: -14px;
 }
+.page-catalog a:hover,
+.page-catalog a:focus,
+.page-catalog a:active{
+  color:#FFBC9E;
+  cursor: pointer;
+}
 .nav-menu .current {
-  border-bottom: none;
   background-color: rgba(208, 112, 88, 1);
   padding-top: 5px;
   padding-bottom: 7px;
@@ -1238,7 +1252,7 @@ h5 {
   border-radius: 50px;
 }
 .nav-menu.catalog {
-  padding-left: 10px;
+  padding-left: 6px;
 }
 .nav-basket .nav-basket-full  {
   background-color: var(--basic-white);

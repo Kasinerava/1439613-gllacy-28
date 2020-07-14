@@ -14,9 +14,19 @@
       <a href="index.html">
         <img src="img/logo.svg" alt="" class="nav-logo">
       </a>
-      <ul class="nav-menu catalog">
-        <li>
+      <ul class="nav-menu catalog dash-catalog">
+        <li class="main-list">
           <a href="catalog.html" aria-label="Каталог" class="current">Каталог</a>
+          <section class="modal-catalog">
+            <h3>Каталог новинок</h3>
+            <ul class="nav-list">
+              <li><p>Новинки</p></li>
+              <li><a href="catalog.html" aria-label="Сливочное"> Сливочное</a></li>
+              <li><a href="#" aria-label="Щербеты"> Щербеты</a></li>
+              <li><a href="#" aria-label="Фруктовый лед"> Фруктовый лед</a></li>
+              <li><a href="#" aria-label="Мелорин"> Мелорин</a></li>
+            </ul>
+          </section>
         </li>
         <li><a href="catalog.html" aria-label="Доставка и оплата">Доставка и оплата</a></li>
         <li><a href="catalog.html" aria-label="О компании">О компании</a></li>
@@ -94,7 +104,7 @@
           <a href="catalog.html" class="page-catalog-2">Каталог</a>
         </li>
         <li>
-          <a href="" class="page-catalog current">Сливочное</a>
+          <a href="" class="current">Сливочное</a>
         </li>
       </ul>
       <h2>Сливочное мороженое</h2>
@@ -107,10 +117,10 @@
               <option value="price-low" label="сначала недорогие"></option>
               <option value="price-high" label="сначала дорогие"></option>
               <option value="fat" label="по жирности"></option>
-              <svg class="sorting-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                <path fill="#ffffff" d="M5.5 10L0 0h11"></path>
-              </svg>
             </Select>
+            <svg class="sorting-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#ffffff" d="M5.5 10L0 0h11"></path>
+            </svg>
           </div>
         </fieldset>
         <fieldset class="price">
