@@ -1286,6 +1286,9 @@ h5 {
   font-size: 13px;
   border-spacing: 0;
 }
+.basket-items img {
+  width:33px;
+}
 .choice-1 a,
 .choice-2 a
 {
