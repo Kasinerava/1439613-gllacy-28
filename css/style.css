@@ -1272,7 +1272,6 @@ h5 {
   align-content: center;
 }
 /*Стилизация полной корзины*/
-
 .basket-items {
   display: none;
   right:0;
@@ -1282,7 +1281,6 @@ h5 {
   background: #F8F7F4;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
   padding: 20px 20px;
-  padding-left: 0;
   border-radius: 5px;
   color:#323232;
   font-size: 13px;
@@ -1294,8 +1292,7 @@ h5 {
   background-image: url("../img/cross-small.svg");
   background-repeat: no-repeat;
   border-radius: 0;
-  left:21px;
-  padding-left: 21px;
+  padding-left: 0;
   margin-top: 15px;
 }
 .choice-1 a:before,
@@ -1305,15 +1302,18 @@ h5 {
 .items-name-1 p {
   text-align: left;
   font-size: 13px;
+  padding-left: 7px;
 }
 .items-name-2 p {
   text-align: left;
   font-size: 13px;
+  padding-left: 7px;
 }
 .items-kg-1,
 .items-kg-2 {
   font-size: 13px;
   text-align: center;
+  padding-left: 40px;
 }
 .items-price-1,
 .items-price-2 {
@@ -1321,19 +1321,49 @@ h5 {
   color:#ABABAB;
   text-align: left;
 }
+.items-sum-1,
+.items-sum-2 {
+  padding-left: 30px;
+}
 .sum {
   text-align: right;
-  padding-top: 25px;
+  padding-top: 15px;
   font-size: 15px;
   font-weight: 600;
+  padding-bottom: 60px;
 }
-.basket-items tr:last-child {
+td.option {
   border-bottom: 1px solid #CACAC7;
+}
+.full-basket:hover .basket-items {
+  display: block;
+}
+.button-basket {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  right: 0;
+  display: none;
+}
+.button-basket .button-order {
+  width: 142px;
+  position: absolute;
+  padding: 13px 15px;
+  background-color: #f26843;
+  background: linear-gradient(to bottom, #F26843 0%, #E74A35 100%);
+  border-radius: 22px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+  cursor: pointer;
+  right:25px;
+  top:180px;
+  font-size: 18px;
+  font-weight: 500;
 }
 .button-basket a:before {
   content: none;
 }
-.full-basket:hover .basket-items {
+.full-basket:hover .button-basket {
   display: block;
 }
 h2 {
@@ -1659,10 +1689,10 @@ select {
   padding-bottom: 4px;
 }
 .pages a:hover {
-  color:var(--basic-black);
+  color:var(--basic-white);
   display: block;
   border:none;
-  background-color: var(--basic-white);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 26px;
 }
 .pages .active {
