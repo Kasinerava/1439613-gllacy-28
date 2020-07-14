@@ -51,14 +51,14 @@ body {
 }
 .slide {
   display: none;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   padding-bottom: 110px;
   text-align: center;
 }
 .section-proposal-1 {
-  background-image: url("../img/slider-1.png");
+  background-image: url("../img/");
 }
 .section-proposal-2 {
   background-image: url("../img/proposal-2.png");
@@ -170,10 +170,10 @@ body {
   left:356px;
 }
 .dash-catalog:after {
-  content: url("../img/dash.svg");
+  content: url("../img/dash-catalog.png");
   position: absolute;
   top:32px;
-  left:362px;
+  left:457px;
 }
 .nav-menu li:hover a,
 .nav-menu li:focus a {
@@ -329,7 +329,6 @@ body {
 .nav-list li a:active {
   background-color: #f6b5a5;
 }
-
 /*Стилизация поиска*/
 
 .modal-search {
@@ -1263,6 +1262,9 @@ h5 {
   color: var(--basic-black);
   font-weight: 500;
 }
+.nav-basket {
+  position: relative;
+}
 .full-basket a::before {
   content: url(../img/basket-red.svg);
   position: absolute;
@@ -1272,40 +1274,44 @@ h5 {
 /*Стилизация полной корзины*/
 
 .basket-items {
-  display: none;
-  right:185px;
-  top:55px;
+  display: non;
+  right:0;
+  top:40px;
   position: absolute;
-  width:539px;
+  width:540px;
   background: #F8F7F4;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-  padding: 20px 20px;
+  padding: 25px 20px;
   border-radius: 5px;
   color:#323232;
   font-size: 13px;
-  align-items: center;
 }
-.choice {
-  content: url("../img/cross-small.svg");
-  width: 11px;
-  align-items: center;
+.choice-1 a{
+  background-image: url("../img/cross-small.svg");
+  background-repeat: no-repeat;
+  border-radius: 0;
 }
-.items-name {
-  width: 230px;
+.choice-2 a {
+  background-image: url("../img/cross-small.svg");
+  background-repeat: no-repeat;
+  border-radius: 0;
 }
-.first-image {
-  content: url("../img/hit-one.png");
-  width: 33px;
-  margin-left:25px;
+.choice-1 a:before,
+.choice-2 a:before{
+  content: none;
 }
-.second-image {
-  content: url("../img/hit-three.png");
-  width: 33px;
+.items-name-1 p {
+  text-align: left;
 }
-.items-kg,
-.items-price,
-.items-sum{
-  width:50px;
+.items-name-2 p {
+  text-align: left;
+}
+
+.sum {
+  text-align: right;
+}
+.basket-items tr:last-child {
+  border-bottom: 1px solid #CACAC7;
 }
 .full-basket:hover .basket-items {
   display: block;
