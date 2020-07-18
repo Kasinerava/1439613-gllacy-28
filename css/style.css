@@ -486,6 +486,7 @@ body {
 }
 
 .main-news-1 {
+  
   position: relative;
   display: flex;
   flex:0 49%;
@@ -505,6 +506,7 @@ body {
 }
 
 .main-news-title {
+  vertical-align: inherit;
   display: inline-block;
   font-size: 35px;
   padding-bottom: 16px;
@@ -695,6 +697,7 @@ h3 {
   padding-bottom: 66px;
 }
 .section-title {
+  vertical-align: inherit;
   display: inline-block;
   flex-basis: 100%;
   padding-left: 20px;
@@ -784,6 +787,7 @@ h4 {
 }
 
 .section-news-1-title {
+  vertical-align: inherit;
   display: inline-block;
   font-weight: 500;
   padding-left: 20px;
@@ -792,6 +796,7 @@ h4 {
 }
 
 .section-news-1-text {
+  vertical-align: inherit;
   display: inline-block;
   position: relative;
   font-weight: 700;
@@ -837,6 +842,7 @@ h4 {
   display: flex;
 }
 .section-news-button {
+  vertical-align: inherit;
   display: inline-block;
   background: linear-gradient(to bottom, #f26843, #e74a35);
   border-radius: 50px;
@@ -948,6 +954,7 @@ h4 {
   line-height: 25px;
 }
 .shop-button {
+  vertical-align: inherit;
   display: inline-block;
   font-weight: 600;
   font-size: 18px;
@@ -1546,6 +1553,7 @@ select {
   display: none;
 }
 .fat label {
+  vertical-align: inherit;
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -1555,6 +1563,7 @@ select {
   user-select: none;
 }
 .fat label::before {
+  vertical-align: inherit;
   content: url(../img/radio-off.svg);
   opacity: 0.8;
   display: inline-block;
@@ -1593,6 +1602,7 @@ select {
   display: none;
 }
 .fill label {
+  vertical-align: inherit;
   display: inline-block;
   cursor: pointer;
   position: relative;
@@ -1602,6 +1612,7 @@ select {
   user-select: none;
 }
 .fill label::before {
+  vertical-align: inherit;
   content: url(../img/checkbox-off.svg);
   opacity: 0.8;
   display: inline-block;
